@@ -1,0 +1,205 @@
+/* Body */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #fddde6, #f3e8ff); /* light pink to light purple */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.6s ease-in-out;
+  animation: fadeInBody 1s ease-in-out;
+}
+
+/* Body fade-in */
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Welcome Section */
+.welcome-container {
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  animation: fadeInContainer 1s ease-in-out;
+}
+
+.welcome-container h1 {
+  color: #d17ce0;
+  margin-bottom: 15px;
+}
+
+.welcome-container p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Learn About Me Button */
+#welcome button {
+  background: linear-gradient(135deg, #f06292, #d17ce0);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+  box-shadow: 0 6px 15px rgba(209, 124, 224, 0.4);
+}
+
+#welcome button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(209, 124, 224, 0.6);
+  background: linear-gradient(135deg, #d17ce0, #f06292);
+}
+
+/* Back Button - fixed top-left */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, #d17ce0, #f06292);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 6px 15px rgba(209, 124, 224, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+}
+
+.back-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(209, 124, 224, 0.7);
+  background: linear-gradient(135deg, #f06292, #d17ce0);
+}
+
+/* Container */
+.container {
+  background-color: #fff;
+  padding: 35px 45px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  opacity: 0;
+  animation: fadeInContainer 0.8s forwards;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+/* Header & Profile Image */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d17ce0;
+  transition: transform 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.15);
+  border-color: #f06292;
+  box-shadow: 0 0 25px rgba(240, 98, 146, 0.6);
+}
+
+/* Headings & Paragraphs */
+h1 {
+  color: #d17ce0;
+  margin: 0;
+  transition: color 0.5s ease-in-out;
+}
+
+p {
+  line-height: 1.6;
+  transition: color 0.5s ease-in-out;
+}
+
+/* Dropdown Buttons */
+.dropdown-btn {
+  background-color: #f06292;
+  color: #fff;
+  padding: 14px 22px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  transition: background-color 0.4s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dropdown-btn:hover {
+  background-color: #d17ce0;
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(209, 124, 224, 0.4);
+}
+
+.dropdown-btn.active {
+  background-color: #d17ce0;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+  background-color: #f9e8ff;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 0 18px;
+}
+
+.dropdown-content p,
+.dropdown-content li {
+  margin: 12px 0;
+  text-align: left;
+  list-style-type: square;
+  transition: color 0.4s ease-in-out;
+}
+
+.dropdown-content p:hover,
+.dropdown-content li:hover {
+  color: #d17ce0;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  color: #f06292;
+  text-decoration: none;
+  transition: color 0.4s ease-in-out;
+}
+
+.dropdown-content a:hover {
+  color: #d17ce0;
+  text-decoration: underline;
+}
+
+/* Fade-in animation for container */
+@keyframes fadeInContainer {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
