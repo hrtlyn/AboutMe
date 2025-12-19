@@ -6,9 +6,7 @@ Welcome to my personal portfolio website! This project showcases my skills, inte
 - [About Me](#about-me)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [How to Run](#how-to-run)
-- [Contact](#contact)
-
+  
 ## About Me
 Hi! I'm **Heartlyn Carino**, 22 years old, a web developer and tech enthusiast.  
 I enjoy creating user-friendly websites, learning new technologies, and sharing knowledge with others.
@@ -25,3 +23,4 @@ I enjoy creating user-friendly websites, learning new technologies, and sharing 
 - **CSS3** - Styling and animations
 - **JavaScript** - Interactive elements (dropdowns, navigation)
 - **Responsive Design** - Works well on different screen sizes
+
